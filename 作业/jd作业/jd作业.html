@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .header {
+            position: relative;
+            width: 990px;
+            height: 60px;
+            margin: 10px auto;
+            /* background-color: aqua; */
+            /* line-height: 60px; */
+            /* margin: 10px 0; */
+        }
+
+        .header .jd {
+            /* display: block;s */
+            float: left;
+            width: 170px;
+            height: 60px;
+            line-height: 100%;
+            background: url(img/logo.png) no-repeat left;
+        }
+
+        .header .wel {
+            float: left;
+            width: 110px;
+            height: 60px;
+            background: url(img/wel.png) no-repeat left;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .header .sss {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            width: 136px;
+            height: 16px;
+            /* right: 0;
+            bottom: 0; */
+            font-size: 12px;
+            /* color: red; */
+            text-indent: 5px;
+            line-height: 100%
+        }
+
+        .sss a {
+            display: block;
+            color: gray;
+        }
+
+        .sss a:hover {
+            display: block;
+            color: #E4393C;
+            text-decoration: underline;
+        }
+
+        .header .q-icon {
+            float: left;
+            width: 18px;
+            height: 14px;
+            background: url(img/q-icon.png) no-repeat center;
+
+        }
+
+        .title {
+            /* width: 990px; */
+            height: 40px;
+            /* line-height: 40px; */
+            margin: 0 auto;
+            background-color: #fff8f0;
+            color: #999;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .title .title-c {
+            position: relative;
+            width: 990px;
+            height: 40px;
+            margin: 0 auto;
+            line-height: 40px;
+
+        }
+
+        .title-c .icon-tips {
+            position: absolute;
+            left: 90px;
+            top: 12px;
+            width: 16px;
+            height: 16px;
+            background: url(img/icon-tips.png) no-repeat left;
+            /* margin: 12px 0 12px 105px; */
+        }
+
+        .title-c a {
+            color: black;
+        }
+
+        .title-c a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            height: 475px;
+            /* background-color: #e93854;s */
+            margin: 0 auto;
+            /* background: url(img/bg.png) no-repeat center; */
+            background-color: #e93854;
+            margin-bottom: 20px;
+        }
+
+        .main-c {
+            position: relative;
+            width: 990px;
+            height: 475px;
+            margin: 0 auto;
+            background: url(img/bg.png) no-repeat center;
+        }
+
+        .main-c .square {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 346px;
+            height: 400px;
+            background-color: #fff;
+
+        }
+
+        .main .title2 {
+            position: relative;
+            width: 336px;
+            height: 38px;
+            background-color: antiquewhite;
+            font-size: 12px;
+            text-align: center;
+            padding-left: 10px;
+            line-height: 38px;
+        }
+
+        .icon-tips {
+            position: absolute;
+            top: 11px;
+            left: 20px;
+            width: 16px;
+            height: 16px;
+            background: url(img/icon-tips.png) no-repeat center;
+            padding-left: 5px;
+            /* vertical-align:-4px; */
+        }
+
+        .main-c .dl {
+            position: relative;
+            /* float: left; */
+            width: 346px;
+            height: 54px;
+            border-bottom: 1px solid gray;
+
+        }
+        .dl .line{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -9px;
+            margin-left: -0.5px;
+            width: 1px;
+            height: 18px;
+            background-color: #666;
+        }
+
+        .dl .sd {
+            float: left;
+            line-height: 54px;
+            text-align: center;
+            width: 173px;
+            height: 54px;
+            /* border-bottom:1px soild gray; */
+            cursor: pointer;
+        }
+        .dl .sd:hover{
+            font-weight: bolder;
+            color: #E4393C;
+        }
+
+        .dl .md {
+            float: left;
+            line-height: 54px;
+            text-align: center;
+            cursor: pointer;
+
+            width: 173px;
+            height: 54px;
+            /* border-bottom:1px soild gray;   */
+        }
+        .dl .md:hover{
+            font-weight: bolder;
+            color: #E4393C;
+        }
+        .dl .sd.active{
+            font-weight: bolder;
+            color: #E4393C;
+        }
+
+        .main-c .sl {
+            /* position: relative; */
+            width: 306px;
+            height: 120px;
+            margin-bottom: 20px;
+
+        }
+
+        .sl .user {
+            position: relative;
+            width: 304px;
+            height: 38px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .sl .mima{
+            position: relative;
+            width: 304px;
+            height: 38px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .sl .img1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(img/pwd-icons-new.png) no-repeat;
+            width: 39px;
+            height: 38px;
+            background-position: 0 0;
+            /* background: url(img/pwd-icons-new.png) no-repeat; */
+            border-right: 1px solid gray;
+
+        }
+        .sl .img2{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(img/pwd-icons-new.png) no-repeat;
+            width: 39px;
+            height: 38px;
+            background-position: -48px 0;
+            /* background: url(img/pwd-icons-new.png) no-repeat; */
+            border-right: 1px solid gray;
+        }
+
+        .sl .input1 {
+            position: absolute;
+            left: 50px;
+            top: 9.5px;
+            width: 243px;
+            border: none;
+            outline: none;
+        }
+        .sl .input2{
+            position: absolute;
+            left: 50px;
+            top: 9.5px;
+            width: 243px;
+            border: none;
+            outline: none;
+        }
+        .sl .input1:focus+.img1 {
+            background-position: 0 -48px;
+        }
+        .sl .input2:focus+.img2{
+            background-position: -48px -48px;
+
+        }
+        .forget{
+            position: relative;
+            width: 306px;
+            height: 18px;
+            margin: 0 auto 20px;
+        }
+        .forget .f1{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 48px;
+            line-height: 100%
+        }
+        .forget .f1 a{
+            color: #666;
+            font-size: 12px;
+        }
+        .forget .f1 a:hover{
+            color: #E4393C;
+            text-decoration: underline;
+        }
+        .icon-dl{
+            width: 302px;
+            height: 31px;
+            margin:0 auto;
+            text-align:center;
+            background-color: #E4393C;
+            /* color:#fff; */
+            border: 1px solid #E4393C;
+            line-height: 31px;
+            cursor: pointer;
+            margin-bottom:26px;
+            /* border-bottom: 1px solid gray; */
+        }
+
+        .icon-dl a{
+            color: #fff;
+            /* font-weight: bolder; */
+            font-size: 20px;
+        }
+        .tz{
+            position: relative;
+            width: 306px;
+            /* height: 110px; */
+            margin: 0 auto;
+            /* line-height: 110px; */
+        }
+        /* .tz .tx{
+            width: 153px;
+            height: 100%;
+        } */
+        .tz .tx{
+            border-top:1px solid #f4f4f4;
+            position: relative;
+            width: 306px;
+            height: 30px;
+            /* float: left; */
+        }
+        .qq .img-qq{
+            float: left;
+            width: 19px;
+            height: 18px;
+            /* background-position: 0 -48px; */
+            background:url(img/qq-wx.png) no-repeat;
+            margin-right:5px; 
+        }
+        .qq a{
+            /* display: block; */
+            float: left;
+            color: #666;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .wx .img-wx{
+            float: left;
+            width: 19px;
+            height: 18px;
+            /* background-position:-19px; */
+            background:url(img/qq-wx.png) no-repeat -20px;
+            /* background-position:-20px; */
+            margin-right:5px; 
+
+        }
+        .tx .wx{
+            float: left;
+            /* width: 76px; */
+            height: 18px;
+            margin-left:15px;
+            margin-top:10px;
+        }
+        .wx a{
+            float: left;
+            color: #666;
+            font-size: 12px;
+            margin-left: 5px;
+
+        }
+        .tx .qq{
+            /* width: 76px;
+            height: 18px;    */
+            float: left;
+            /* width: 76px; */
+            height: 18px;
+            margin-top:10px;
+        }
+        /* .wx{
+            float: left; */
+        .line{
+            position: absolute;
+            left: 19%;
+            top:12px;
+            width: 1px;
+            height: 14px;
+            background-color:#f4f4f4;
+
+        }
+        .tx .qq:hover a{
+            color: #E4393C;
+            text-decoration: underline;
+
+        }
+        .tx .wx:hover a{
+            color: #E4393C;
+            text-decoration: underline;
+        }
+        
+        .tz .zc{
+            /* position: absolute;
+            right: 0; */
+            /* bottom: 18px; */
+            /* position: relative; */
+            width: 153px;
+            height: 18px;
+        }
+        /* .zc a{
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+
+        } */
+        .zc .icon-you{
+            position: absolute;
+            right: 0;
+            bottom: 1px;
+            width: 100px;height: 18px;
+            background: url(img/pwd-icons-new.png) no-repeat -96px -75px;
+            text-align:right;
+            line-height:center;
+           
+        }
+        .zc a{
+            color: #666;
+            font-size: 16px;
+            line-height: 100%;
+        }
+        .zc a:hover .icon-you{
+            color: #E4393C;
+            text-decoration: underline;
+        }
+    
+
+
+
+
+        /* .title2 img{
+            display: inline-block;
+            margin-top:px;
+        } */
+        .tail {
+            /* width: 990px; */
+            height: 56px;
+            line-height: 100%;
+            /* margin: 0 auto; */
+            /* background-color: blue; */
+        }
+
+        .tail-c {
+            width: 990px;
+            height: 56px;
+            /* background-color: green; */
+            margin: 0 auto;
+            /* line-height:56px; */
+            text-align: center;
+        }
+
+        .tail-c .guan {
+            /* float: left; */
+            display: block;
+            font-size: 12px;
+            margin: 0 10px 10px 10px;
+        }
+
+        .guan a {
+            margin: 0 10px;
+            color: #666;
+        }
+
+        .guan a:hover {
+            color: #E4393C;
+            text-decoration: underline;
+        }
+
+        .tail-c span {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="" class="jd"></a>
+        <span class="wel"></span>
+        <div class="sss">
+            <!-- <div class="q-icon"></div> -->
+            <a href="">
+                <div class="q-icon"></div> 登录页面，调查问卷
+            </a>
+        </div>
+    </div>
+    <div class="title">
+        <div class="title-c">
+            <div class="icon-tips">
+
+            </div>
+            <span>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版 <a href="#">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</span>
+
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="main-c">
+            <div class="square">
+                <div class="title2">
+                    <div class="icon-tips"></div>
+                    <span>京东不会以任何理由要求您转账汇款，谨防诈骗。</span>
+                </div>
+                <div class="dl">
+                    <div class="sd active">扫码登陆</div>
+                    <span class="line"></span>
+                    <div class="md">密码登录</div>
+                </div>
+                <div class="sl">
+                    <div class="user">
+                        <input class="input1" type="text" placeholder="手机/用户名/邮箱">
+                        <div class="img1"></div>
+                    </div>
+                    <div class="mima">
+                            <input class="input2" type="text" placeholder="密码">
+                            <div class="img2"></div>
+                    </div>
+                    <!-- <div class="password"><input type="password"></div> -->
+                </div>
+                <div class="forget">
+                    <div class="f1">
+                        <a href="#">忘记密码</a>
+                    </div>
+                </div>
+                <div class="icon-dl">
+                    <a href="#">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆 </a>
+                    <!-- 登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆     -->
+                    <!-- text-align:center; -->
+                </div>
+                <div class="tz">
+                    <div class="tx">
+                            <div class="qq"> 
+                                <!-- <div class="img-qq"></div> -->
+                                <a href="#"> <div class="img-qq"></div> QQ</a>
+                            </div>
+                            <span class="line"></span>
+                            <div class="wx">
+                                
+                                <a href="#"> <div class="img-wx"></div> 微信</a>
+                            </div>
+                            <div class="zc">
+                                    <a href="#"> <div class="icon-you"> 立即注册</div></a>
+                                    <!-- <div class="icon-you"> -->
+            
+                            </div>
+                                
+                    </div>
+                   
+                    </div>
+                    <!-- <div class="zc">
+                        <a href="#"><div class="icon-you"> 立即注册</div></a>
+                         <div class="icon-you"> -->
+
+                        </div>
+                    </div> 
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="tail">
+        <div class="tail-c">
+            <div class="guan">
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+                |
+                <a href="#">关于我们 </a>
+
+            </div>
+            <span>Copyright © 2004-2019 京东JD.com 版权所有</span>
+        </div>
+
+    </div>
+</body>
+
+</html>

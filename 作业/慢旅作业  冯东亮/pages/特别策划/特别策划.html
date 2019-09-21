@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>特别策划</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/title.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+</head>
+<style>
+    .main {
+        height: 1100px;
+    }
+
+    .main-c {
+        width: 1200px;
+        height: 1100px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+
+    .main-c .left1 {
+        position: relative;
+        float: left;
+        width: 540px;
+        height: 249px;
+        margin-right: 110px;
+        margin-bottom: 69px;
+    }
+    .main-c .left1 .img {
+        position: relative;
+        float: left;
+        width: 350px;
+        height: 249px;
+        background-color: rgba(171, 171, 171, 33%);
+        margin-right: 25px;
+    }
+
+    .left1 .img .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 249px;
+        background-color: rgba(0, 0, 0, .4);
+        display: none;
+    }
+
+    .left1 .img .inner-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -152.5px;
+        margin-top: -93px;
+        width: 305px;
+        height: 186px;
+        border: 1px solid #04e4f8;
+    }
+
+    .left1 .img:hover .box {
+        display: block;
+    }
+
+
+    .main-c .left1 .text1 {
+        float: left;
+        width: 165px;
+        height: 71px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+
+    .main-c .left1 .text1 h2 {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .main-c .left1 .text1 p {
+        font-size: 14px;
+        color: #727171;
+        line-height: 30px;
+    }
+
+    .main-c .left1 .text1 .t {
+        width: 40px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        color: #727171;
+        border: 1px solid #b5b5b5;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .main-c .left1 .text2 {
+        float: left;
+        width: 165px;
+        line-height: 22px;
+        height: 62px;
+        font-size: 14px;
+        color: #727171;
+    }
+
+    .main-c .left2 {
+        float: left;
+        width: 540px;
+        height: 249px;
+        margin-right: 110px;
+        margin-bottom: 69px;
+
+    }
+
+    .main-c .left2 .img {
+        position: relative;
+        float: left;
+        width: 350px;
+        height: 249px;
+        margin-right: 25px;
+    }
+
+    .left2 .img .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 251px;
+        background-color: rgba(0, 0, 0, .4);
+        display: none;
+    }
+
+    .left2 .img .inner-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -152.5px;
+        margin-top: -93px;
+        width: 305px;
+        height: 186px;
+        border: 1px solid #04e4f8;
+    }
+
+    .left2 .img:hover .box {
+        display: block;
+    }
+
+    .main-c .left2 .text1 {
+        float: left;
+        width: 165px;
+        height: 71px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+
+    .main-c .left2 .text1 h2 {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .main-c .left2 .text1 p {
+        font-size: 14px;
+        color: #727171;
+        line-height: 30px;
+    }
+
+    .main-c .left2 .text1 .t {
+        width: 40px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        color: #727171;
+        border: 1px solid #b5b5b5;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .main-c .left2 .text2 {
+        float: left;
+        width: 165px;
+        line-height: 22px;
+        height: 62px;
+        font-size: 14px;
+        color: #727171;
+    }
+
+    .main-c .left3 {
+        float: left;
+        width: 540px;
+        height: 249px;
+        margin-right: 110px;
+    }
+
+    .main-c .left3 .img {
+        position: relative;
+        float: left;
+        width: 350px;
+        height: 249px;
+        margin-right: 25px;
+    }
+
+    .left3 .img .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 249px;
+        background-color: rgba(0, 0, 0, .4);
+        display: none;
+    }
+
+    .left3 .img .inner-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -152.5px;
+        margin-top: -93px;
+        width: 305px;
+        height: 186px;
+        border: 1px solid #04e4f8;
+    }
+
+    .left3 .img:hover .box {
+        display: block;
+    }
+
+    .main-c .left3 .text1 {
+        float: left;
+        width: 165px;
+        height: 71px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+
+    .main-c .left3 .text1 h2 {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .main-c .left3 .text1 p {
+        font-size: 14px;
+        color: #727171;
+        line-height: 30px;
+    }
+
+    .main-c .left3 .text1 .t {
+        width: 40px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        color: #727171;
+        border: 1px solid #b5b5b5;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .main-c .left3 .text2 {
+        float: left;
+        width: 165px;
+        line-height: 22px;
+        height: 62px;
+        font-size: 14px;
+        color: #727171;
+    }
+
+    .main-c .right1 {
+        float: left;
+        width: 550px;
+        height: 249px;
+        margin-bottom: 69px;
+
+    }
+
+    .main-c .right1 .img {
+        position: relative;
+        float: left;
+        width: 339px;
+        height: 249px;
+        /* background: url(img/ch-4.png) no-repeat center; */
+        margin-right: 25px;
+    }
+
+    .right1 .img .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 339px;
+        height: 251px;
+        background-color: rgba(0, 0, 0, .4);
+        display: none;
+    }
+
+    .right1 .img .inner-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -152.5px;
+        margin-top: -93px;
+        width: 305px;
+        height: 186px;
+        border: 1px solid #04e4f8;
+    }
+
+    .right1 .img:hover .box {
+        display: block;
+    }
+
+
+    .main-c .right1 .text1 {
+        float: left;
+        width: 165px;
+        height: 71px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+
+    .main-c .right1 .text1 h2 {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .main-c .right1 .text1 p {
+        font-size: 14px;
+        color: #727171;
+        line-height: 30px;
+    }
+
+    .main-c .right1 .text1 .t {
+        width: 40px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        color: #727171;
+        border: 1px solid #b5b5b5;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .main-c .right1 .text2 {
+        float: left;
+        width: 165px;
+        line-height: 22px;
+        height: 62px;
+        font-size: 14px;
+        color: #727171;
+    }
+
+    .main-c .right2 {
+        float: left;
+        width: 550px;
+        height: 249px;
+        margin-bottom: 69px;
+
+    }
+
+    .main-c .right2 .img {
+        position: relative;
+        float: left;
+        width: 339px;
+        height: 249px;
+        /* background: url(img/ch-5.png) no-repeat center; */
+        margin-right: 25px;
+    }
+
+    .right2 .img .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 339px;
+        height: 249px;
+        background-color: rgba(0, 0, 0, .4);
+        display: none;
+        /* transition-duration：5s; */
+    }
+
+    .right2 .img .inner-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -152.5px;
+        margin-top: -93px;
+        width: 305px;
+        height: 186px;
+        border: 1px solid #04e4f8;
+        /* transition-duration：5s; */
+        /* animation-duration:2s; */
+
+
+    }
+
+    .right2 .img:hover .box {
+        /* animation-duration:2s; */
+        display: block;
+    }
+
+    .main-c .right2 .text1 {
+        float: left;
+        width: 165px;
+        height: 71px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+
+    .main-c .right2 .text1 h2 {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .main-c .right2 .text1 p {
+        font-size: 14px;
+        color: #727171;
+        line-height: 30px;
+    }
+
+    .main-c .right2 .text1 .t {
+        width: 40px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        color: #727171;
+        border: 1px solid #b5b5b5;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .main-c .right2 .text2 {
+        float: left;
+        width: 165px;
+        line-height: 22px;
+        height: 62px;
+        font-size: 14px;
+        color: #727171;
+    }
+
+    .main-c .right3 {
+        float: left;
+        width: 550px;
+        height: 249px;
+    }
+
+    .main-c .right3 .img {
+        position: relative;
+        float: left;
+        width: 339px;
+        height: 249px;
+        /* background: url(img/ch-6.png) no-repeat center; */
+        margin-right: 25px;
+    }
+
+    .right3 .img .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 348px;
+        height: 249px;
+        background-color: rgba(0, 0, 0, .4);
+        display: none;
+    }
+
+    .right3 .img .inner-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -152.5px;
+        margin-top: -93px;
+        width: 305px;
+        height: 186px;
+        border: 1px solid #04e4f8;
+    }
+
+    .right3 .img:hover .box {
+        display: block;
+    }
+
+    .main-c .right3 .text1 {
+        float: left;
+        width: 165px;
+        height: 71px;
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+
+    .main-c .right3 .text1 h2 {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .main-c .right3 .text1 p {
+        font-size: 14px;
+        color: #727171;
+        line-height: 30px;
+    }
+
+    .main-c .right3 .text1 .t {
+        width: 40px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        color: #727171;
+        border: 1px solid #b5b5b5;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .main-c .right3 .text2 {
+        float: left;
+        width: 165px;
+        line-height: 22px;
+        height: 62px;
+        font-size: 14px;
+        color: #727171;
+    }
+
+    .footer {
+        background-color: #f2f2f2;
+    }
+
+    .footer-c .r .h {
+        position: absolute;
+        top: 87px;
+        left: 100px;
+    }
+</style>
+
+<body>
+    <div class="top">
+        <div class="top-c">
+            <a href="../../慢旅作业.html">
+                <div class="logo"></div>
+            </a>
+            <div class="text">
+                <span><a href="../../慢旅作业.html">首页</a></span>
+                <span><a href="">特别策划</a></span>
+                <span class="jp"><a href="../精品路线/定制团体游/定制团体游.html">精品路线</a>
+                    <div class="ej"><a href="../精品路线/定制团体游/定制团体游.html">定制团体游</a><a
+                            href="../精品路线/领队自由行/领队自由行.html">领队自由行</a></div>
+                </span>
+                <span class="gy"><a href="../关于我们/关于我们.html">关于我们</a>
+                    <div class="ej">
+                        <p><a href="">企业理念</a></p>
+                        <p><a href="">品牌介绍</a></p>
+                    </div>
+                </span>
+                <span class="mr0"><a href="../联系我们/联系我们.html">联系我们</a>
+                    <div class="ej">
+                        <p><a href="">在线咨询</a></p>
+                        <p><a href="">留言板块 </a></p>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-c">
+            <div class="title">
+                <p class="c">特别策划</p>
+                <p class="e">ACTIVITY ROUTR</p>
+            </div>
+            <div class="left1">
+                <div class="k">
+                    <div class="k1"></div>
+                </div>
+                <div class="img"><img src="img/ch-1.png" alt="">
+                    <div class="box">
+                        <div class="inner-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h2>超值特惠云南6日游</h2>
+                    <p>￥2380起</p>
+                    <p>
+                        <div class="t">摄影</div>
+                        <div class="t">景区</div>
+                        <div class="t">酒店</div>
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>往返交通：飞机</p>
+                    <p>行程描述：大理+香格里拉
+                        +泸沽湖+苍山洱海</p>
+                </div>
+            </div>
+            <div class="right1">
+                <div class="img"><img src="img/ch-4.png" alt="">
+                    <div class="box">
+                        <div class="inner-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h2>成都全程跟团6日游</h2>
+                    <p>￥3380起</p>
+                    <p>
+                        <div class="t">摄影</div>
+                        <div class="t">景区</div>
+                        <div class="t">酒店</div>
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>往返交通：飞机</p>
+                    <p>行程描述：太古里+宽窄巷子
+                        +锦鲤+武侯祠</p>
+                </div>
+            </div>
+            <div class="left2">
+                <div class="img"><img src="img/ch-2.png" alt="">
+                    <div class="box">
+                        <div class="inner-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h2>青海5晚6日自由行</h2>
+                    <p>￥2380起</p>
+                    <p>
+                        <div class="t">摄影</div>
+                        <div class="t">景区</div>
+                        <div class="t">酒店</div>
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>往返交通：飞机+火车</p>
+                    <p>行程描述：青海湖+茶卡盐湖
+                        +敦煌莫高窟+嘉峪关</p>
+                </div>
+            </div>
+
+            <div class="right2">
+                <div class="img"><img src="img/ch-5.png" alt="">
+                    <div class="box">
+                        <div class="inner-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h2>鼓浪屿浪漫跟团游</h2>
+                    <p>￥3380起</p>
+                    <p>
+                        <div class="t">摄影</div>
+                        <div class="t">景区</div>
+                        <div class="t">酒店</div>
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>往返交通：飞机+船</p>
+                    <p>行程描述：最美转角+龙头路
+                        +日光岩</p>
+                </div>
+            </div>
+            <div class="left3">
+                <div class="img"><img src="img/ch-3.png" alt="">
+                    <div class="box">
+                        <div class="inner-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h2>西安3晚6日跟团游</h2>
+                    <p>￥2380起</p>
+                    <p>
+                        <div class="t">摄影</div>
+                        <div class="t">景区</div>
+                        <div class="t">酒店</div>
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>往返交通：飞机</p>
+                    <p>行程描述：钟楼+大雁塔
+                        +小寨+回民街</p>
+                </div>
+            </div>
+            <div class="right3">
+                <div class="img"><img src="img/ch-6.png" alt="">
+                    <div class="box">
+                        <div class="inner-box">
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h2>长白山天池6日跟团游</h2>
+                    <p>￥3380起</p>
+                    <p>
+                        <div class="t">摄影</div>
+                        <div class="t">景区</div>
+                        <div class="t">酒店</div>
+                    </p>
+                </div>
+                <div class="text2">
+                    <p>往返交通：飞机</p>
+                    <p>行程描述：北坡+温泉
+                        +符石林+西坡</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-c">
+            <div class="l">
+                <div class="title">
+                    <!-- <p class="c">联系我们</p>
+                        <p class="e">CONTACT</p>
+                        <div class="blue"></div> -->
+                </div>
+                <h2>慢旅Slow Travle工作室 </h2>
+                <p>地点：中国河南省郑州市绿地新都汇</p>
+                <p>邮编：1000000</p>
+                <p>电话：0392-23656504</p>
+                <p>邮箱：manlv@qq.com</p>
+                <p><a href=""><img src="img/hs-9.png " alt=""></a><a href=""><img src="img/hs-10.png" alt="">
+                    </a><a href=""><img src="img/hs-11.png" alt=""></a></p>
+                <p>COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</p>
+            </div>
+            <div class="r">
+                <div class="h">
+                    <div class="name">
+                        <p>姓名</p> <input class="in" type=" ">
+                    </div>
+                    <div class="yx">
+                        <p>邮箱</p> <input class="in" type="text">
+                    </div>
+                    <div class="tel">
+                        <p>电话</p> <input class="in" type="text">
+                    </div>
+                    <div class="main">
+                        <p>内容</p> <input class="in" type="text">
+                    </div>
+                    <a href="">
+                        <div class="bu">
+                            提交
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

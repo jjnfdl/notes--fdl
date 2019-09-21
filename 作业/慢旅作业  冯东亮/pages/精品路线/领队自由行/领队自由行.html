@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>领队自由行</title>
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+</head>
+<style>
+    .main-c {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #fbfdfd;
+        margin-bottom: 150px;
+    }
+
+    .main-c .jw {
+        position: relative;
+        width: 1200px;
+        height: 273px;
+    }
+
+    .main-c .jw a {
+        /* display: block; */
+        width: 89px;
+        height: 43px;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        text-align: center;
+        line-height: 43px;
+        font-size: 20px;
+        color: #434545;
+        border: 1px solid #c2c7cc;
+    }
+
+    .main-c .jw a:hover {
+        background-color: #5ad0dc;
+    }
+
+    .jw .h {
+        float: right;
+        width: 1084px;
+        height: 275px;
+    }
+
+    .jw .h .img1 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        margin-right: 57px;
+    }
+
+    .jw .h .img1 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .jw .img1 .img {
+        position: relative;
+        width: 323px;
+        height: 199px;
+        /* background: url(img/ld-1.png) no-repeat center; */
+    }
+
+    .jw .img1 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 323px;
+        height: 199px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .jw .img1 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .jw .img1:hover .box{
+        display: block;
+    } 
+
+    .jw .img1 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .jw .img1 .text h2 {
+        font-size: 16px;
+    }
+
+    .jw .img1 .text p {
+        font-size: 12px;
+    }
+
+    .jw .h .img2 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        margin-right: 57px;
+    }
+
+    .jw .h .img2 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .jw .img2 .img {
+        position: relative;
+        width: 310px;
+        height: 199px;
+        /* background: url(img/ld-2.png) no-repeat center; */
+    }
+    .jw .img2 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 310px;
+        height: 199px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .jw .img2 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .jw .img2:hover .box{
+        display: block;
+    } 
+
+    .jw .img2 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .jw .img2 .text h2 {
+        font-size: 16px;
+    }
+
+    .jw .img2 .text p {
+        font-size: 12px;
+    }
+
+    .jw .h .img3 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        /* margin-right: 70px; */
+    }
+
+    .jw .h .img3 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .jw .img3 .img {
+        position: relative;
+        width: 308px;
+        height: 199px;
+        /* background: url(img/ld-3.png) no-repeat center; */
+    }
+    .jw .img3 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 308px;
+        height: 199px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .jw .img3 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .jw .img3:hover .box{
+        display: block;
+    } 
+
+
+    .jw .img3 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .jw .img3 .text h2 {
+        font-size: 16px;
+    }
+
+    .jw .img3 .text p {
+        font-size: 12px;
+    }
+
+    .main-c .gn {
+        position: relative;
+        width: 1200px;
+        height: 273px;
+    }
+
+    .main-c .gn a {
+        /* display: block; */
+        width: 89px;
+        height: 43px;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        text-align: center;
+        line-height: 43px;
+        font-size: 20px;
+        color: #434545;
+        border: 1px solid #c2c7cc;
+    }
+
+    .main-c .gn a:hover {
+        background-color: #5ad0dc;
+    }
+
+    .gn {
+        margin: 75px 0;
+    }
+
+    .gn .h {
+        float: right;
+        width: 1084px;
+        height: 275px;
+        /* margin:75px 0; */
+    }
+
+    .gn .h .img1 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        margin-right: 57px;
+    }
+
+    .gn .h .img1 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .gn .img1 .img {
+        position: relative;
+        width: 323px;
+        height: 192px;
+        /* background: url(img/ld-4.png) no-repeat center; */
+    }
+    .gn .img1 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 323px;
+        height: 192px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .gn .img1 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .gn .img1:hover .box{
+        display: block;
+    } 
+
+
+    .gn .img1 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .gn .img1 .text h2 {
+        font-size: 16px;
+    }
+
+    .gn .img1 .text p {
+        font-size: 12px;
+    }
+
+    .gn .h .img2 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        margin-right: 57px;
+    }
+
+    .gn .h .img2 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .gn .img2 .img {
+        position: relative;
+        width: 308px;
+        height: 194px;
+        /* background: url(img/ld-5.png) no-repeat center; */
+    }
+    .gn .img2 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 308px;
+        height: 194px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .gn .img2 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .gn .img2:hover .box{
+        display: block;
+    } 
+
+    .gn .img2 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .gn .img2 .text h2 {
+        font-size: 16px;
+    }
+
+    .gn .img2 .text p {
+        font-size: 12px;
+    }
+
+    .gn .h .img3 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        /* margin-right: 70px; */
+    }
+
+    .gn .h .img3 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .gn .img3 .img {
+        position: relative;
+        width: 304px;
+        height: 195px;
+        /* background: url(img/ld-6.png) no-repeat center; */
+    }
+    .gn .img3 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 304px;
+        height: 195px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .gn .img3 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .gn .img3:hover .box{
+        display: block;
+    } 
+
+    .gn .img3 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .gn .img3 .text h2 {
+        font-size: 16px;
+    }
+
+    .gn .img3 .text p {
+        font-size: 12px;
+    }
+
+    .main-c .sn {
+        position: relative;
+        width: 1200px;
+        height: 273px;
+    }
+
+    .main-c .sn a {
+        /* display: block; */
+        width: 89px;
+        height: 43px;
+        position: absolute;
+        top: 115px;
+        left: 0;
+        text-align: center;
+        line-height: 43px;
+        font-size: 20px;
+        color: #434545;
+        border: 1px solid #c2c7cc;
+    }
+
+    .main-c .sn a:hover {
+        background-color: #5ad0dc;
+    }
+
+    .sn .h {
+        float: right;
+        width: 1084px;
+        height: 275px;
+        /* margin:75px 0; */
+    }
+
+    .sn .h .img1 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        margin-right: 57px;
+    }
+
+    .sn .h .img1 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .sn .img1 .img {
+        position: relative;
+        width: 323px;
+        height: 192px;
+        /* background: url(img/ld-4.png) no-repeat center; */
+    }
+    .sn .img1 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 323px;
+        height: 192px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .sn .img1 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .sn .img1:hover .box{
+        display: block;
+    } 
+
+    .sn .img1 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .sn .img1 .text h2 {
+        font-size: 16px;
+    }
+
+    .sn .img1 .text p {
+        font-size: 12px;
+    }
+
+    .sn .h .img2 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        margin-right: 57px;
+    }
+
+    .sn .h .img2 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .sn .img2 .img {
+        position: relative;
+        width: 308px;
+        height: 194px;
+        /* background: url(img/ld-5.png) no-repeat center; */
+    }
+    .sn .img2 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 308px;
+        height: 194px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .sn .img2 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .sn .img2:hover .box{
+        display: block;
+    } 
+
+    .sn .img2 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .sn .img2 .text h2 {
+        font-size: 16px;
+    }
+
+    .sn .img2 .text p {
+        font-size: 12px;
+    }
+
+    .sn .h .img3 {
+        width: 323px;
+        height: 275px;
+        position: relative;
+        float: left;
+        /* margin-right: 70px; */
+    }
+
+    .sn .h .img3 span {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 308px;
+        height: 1px;
+        background-color: #7e8080;
+    }
+
+    .sn .img3 .img {
+        position: relative;
+        width: 304px;
+        height: 195px;
+        /* background: url(img/ld-6.png) no-repeat center; */
+    }
+    .sn .img3 .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 304px;
+        height: 195px;
+        background-color:rgba(0,0,0,.4);
+        display: none;
+    }
+    .sn .img3 .inner-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -124.5px;
+        margin-top: -64.5px;
+        width: 249px;
+        height: 129px;
+        border: 1px solid #04e4f8;
+    }
+    .sn .img3:hover .box{
+        display: block;
+    } 
+
+    .sn .img3 .text {
+        width: 323px;
+        margin-top: 19px;
+    }
+
+    .sn .img3 .text h2 {
+        font-size: 16px;
+    }
+
+    .sn .img3 .text p {
+        font-size: 12px;
+    }
+
+    .main-c .gd {
+        position: absolute;
+        bottom: -93px;
+        left: 50%;
+        margin-left: -142.5px;
+        width: 285px;
+        height: 43px;
+    }
+
+    .main-c .sz {
+        float: left;
+        position: relative;
+        width: 165px;
+        height: 43px;
+        line-height: 43px;
+    }
+
+    .main-c .sz a {
+        color: #434545;
+    }
+
+    .main-c .sz .d {
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+
+    .main-c .mo {
+        color: #434545;
+        border: 1px solid #c2c7cc;
+        width: 89px;
+        height: 41px;
+        text-align: center;
+        line-height: 41px;
+    }
+
+    .main-c .more {
+        float: right;
+        width: 89px;
+        height: 41px;
+    }
+
+    .main-c .mo:hover {
+        color: #5ad0dc;
+        border-color: #5ad0dc;
+    }
+
+    .main-c .sz a:hover {
+        color: #5ad0dc;
+    }
+</style>
+
+<body>
+    <div class="top">
+        <div class="top-c">
+            <a href="../../../慢旅作业.html">
+                <div class="logo"></div>
+            </a>
+            <div class="text">
+                <span><a href="../../../慢旅作业.html">首页</a></span>
+                <span><a href="../../特别策划/特别策划.html">特别策划</a></span>
+                <span class="jp"><a href="../../精品路线/定制团体游/定制团体游.html">精品路线</a>
+                    <div class="ej"><a href="../定制团体游/定制团体游.html">定制团体游</a><a
+                            href="../领队自由行/领队自由行.html">领队自由行</a></div>
+                </span>
+                <span class="gy"><a href="../../关于我们/关于我们.html">关于我们</a>
+                    <div class="ej">
+                        <p><a href="">企业理念</a></p>
+                        <p><a href="">品牌介绍</a></p>
+                    </div>
+                </span>
+                <span class="mr0"><a href="../../联系我们/联系我们.html">联系我们</a>
+                    <div class="ej">
+                        <p><a href="">在线咨询</a></p>
+                        <p><a href="">留言板块 </a></p>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-c">
+
+            <div class="jw">
+                <a href="">
+                    <div class="title">境外游</div>
+                </a>
+                <div class="h">
+                    <div class="img1">
+                        <div class="img"><img src="img/ld-1.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div>
+                        </div>
+                        
+                        <div class="text">
+                            <h2>京都岚山深度 一日游</h2>
+                            <p>寻找我们的风花雪月</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="img2">
+                        <div class="img"><img src="img/ld-2.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>东极岛 三日游</h2>
+                            <p>后青春时代的海岛记忆</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="img3">
+                        <div class="img"><img src="img/ld-3.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>圣托里尼 两日游</h2>
+                            <p>爱琴海最璀璨的一颗明珠</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gn">
+                <a href="">
+                    <div class="title">国内游</div>
+                </a>
+                <div class="h">
+                    <div class="img1">
+                        <div class="img"><img src="img/ld-4.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>西北环线自驾游</h2>
+                            <p>圆一场关于北方的梦</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="img2">
+                        <div class="img"><img src="img/ld-5.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>雪国之旅</h2>
+                            <p>打开窗听雪落下的声音</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="img3">
+                        <div class="img"><img src="img/ld-6.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>东方夏威夷</h2>
+                            <p>请到天涯海角来这里四季春常在</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sn">
+                <a href="">
+                    <div class="title">省内游</div>
+                </a>
+                <div class="h">
+                    <div class="img1">
+                        <div class="img"><img src="img/ld-7.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>神奇的梦幻乐园</h2>
+                            <p>这是一场盛大的欢乐盛宴</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="img2">
+                        <div class="img"><img src="img/ld-8.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>银练挂天</h2>
+                            <p>银丝飘动 珍珠串滑 置身其境 心旷神怡</p>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="img3">
+                        <div class="img"><img src="img/ld-9.png" alt="">
+                            <div class="box"><div class="inner-box"></div></div></div>
+                        <div class="text">
+                            <h2>十三朝古都</h2>
+                            <p>中国牡丹花都</p>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gd">
+                <div class="sz">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a class="d" href="">...</a>
+                </div>
+                <a class="more" href="">
+                    <div class="mo">MORE</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer-c">
+            <div class="l">
+                <div class="title">
+                    <!-- <p class="c">联系我们</p>
+                                <p class="e">CONTACT</p>
+                                <div class="blue"></div> -->
+                </div>
+                <h2>慢旅Slow Travle工作室 </h2>
+                <p>地点：中国河南省郑州市绿地新都汇</p>
+                <p>邮编：1000000</p>
+                <p>电话：0392-23656504</p>
+                <p>邮箱：manlv@qq.com</p>
+                <p><a href=""><img src="img/hs-9.png " alt=""></a><a href=""><img src="img/hs-10.png" alt="">
+                    </a><a href=""><img src="img/hs-11.png" alt=""></a></p>
+                <p>COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</p>
+            </div>
+            <div class="r">
+                <div class="h">
+                    <div class="name">
+                        <p>姓名</p> <input class="in" type=" ">
+                    </div>
+                    <div class="yx">
+                        <p>邮箱</p> <input class="in" type="text">
+                    </div>
+                    <div class="tel">
+                        <p>电话</p> <input class="in" type="text">
+                    </div>
+                    <div class="main">
+                        <p>内容</p> <input class="in" type="text">
+                    </div>
+                    <a href="">
+                        <div class="bu">
+                            提交
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

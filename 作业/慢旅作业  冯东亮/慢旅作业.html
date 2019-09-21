@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+
+            list-style: none;
+        }
+
+        .top {
+            height: 76px;
+            background-color: #fdfcfc;
+            line-height: 76px;
+            /* margin: 0 auto; */
+        }
+
+        .top-c {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            /* background: url(dev/img/hs-1.png) no-repeat left; */
+
+        }
+
+        .top-c .logo {
+            width: 106px;
+            height: 76px;
+            float: left;
+            background:url(img/hs-1.png) no-repeat center;
+        }
+
+        .top-c .text {
+            height: 39px;
+            line-height: 39px;
+            float: right;
+            margin-top: 18.5px;
+        }
+
+        .top-c .text span {
+            display: block;
+            float: left;
+            margin-right: 80px;
+        }
+
+        .top-c .text .mr0 {
+            margin-right: 0;
+        }
+
+        .top-c .text a {
+            display: block;
+            height: 100%;
+            color: #c9c9c9;
+        }
+
+        .top-c .text a:hover {
+            color: #00daed;
+            border-bottom: 2px solid #00daed;
+        }
+
+        .banner-1 {
+            position: relative;
+            height: 624px;
+            background: url(img/hs-2.png) no-repeat center;
+            margin-bottom: 102px;
+        }
+
+        .banner-1 .yuan {
+            width: 120px;
+            height: 14px;
+            position: absolute;
+            bottom: 37px;
+            left: 50%;
+            margin-left: -50px;
+        }
+
+        .banner-1 .yu a {
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+
+        .banner-1 .yu a:hover {
+            background-color: #fff;
+        }
+
+        .top-c .text .jp,
+        .gy,
+        .mr0 {
+            position: relative;
+        }
+
+        .top-c .text .ej {
+            position: absolute;
+            top: 41px;
+            left: -3px;
+            width: 70px;
+            height: 39px;
+            line-height: 19px;
+            font-size: 14px;
+            display: none;
+            background-color: #fff;
+            text-align: center;
+            z-index: 5;
+        }
+
+        .top-c .text .ej a {
+            display: inline;
+            font-size: 14px;
+            /* line-height: 1; */
+        }
+
+        .top-c .text .jp:hover .ej {
+            display: inline;
+        }
+
+        .top-c .jp .ej a:hover {
+            /* text-decoration: none; */
+            border: 0;
+        }
+
+        .top-c .text .gy:hover .ej {
+            display: inline;
+        }
+
+        .top-c .gy .ej a:hover {
+            /* text-decoration: none; */
+            border: 0;
+        }
+
+        .top-c .text .mr0:hover .ej {
+            display: inline;
+        }
+
+        .top-c .mr0 .ej a:hover {
+            /* text-decoration: none; */
+            border: 0;
+        }
+
+        .main-c {
+            position: relative;
+            width: 1200px;
+            height: 1048px;
+            margin: 0 auto 100px;
+            /* background-color: pink; */
+        }
+
+        .main-c .title {
+            width: 114px;
+            height: 44px;
+            margin-bottom: 42px;
+        }
+
+        .main-c .title .c {
+            position: relative;
+            color: #3b3b3b;
+            font-size: 24px;
+            z-index: 4;
+            line-height: 1;
+        }
+
+        .main-c .title .e {
+            font-size: 14px;
+            color: #c7c7c7;
+            line-height: 20px;
+            /* line-height: 1; */
+        }
+
+        .main-c .title .blue {
+            position: absolute;
+            left: -24px;
+            top: 3px;
+            width: 53px;
+            height: 13px;
+            background-color: #04e4f8;
+        }
+
+        .main-c .k1 {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 273px;
+            margin-bottom: 1px;
+        }
+
+        .k1 .img {
+            width: 382px;
+            height: 273px;
+            background: url(img/hs-3.png) no-repeat center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .k1 .text {
+            float: right;
+            width: 818px;
+            height: 167px;
+            background-color: #fbfbfb;
+            margin-top: 53px;
+            /* margin-right: 10px; */
+            text-align: center;
+            /* line-height: px; */
+        }
+
+        .k1 .text .text-1 {
+            width: 450px;
+            height: 89px;
+            margin: 39px auto;
+            line-height: 35px;
+        }
+
+        .k1 .text .text-1 .p1 {
+            position: relative;
+        }
+
+        .k1 .box1 {
+            position: absolute;
+            top: 14.5px;
+            left: 2px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #f19ec2;
+            transform: rotate(45deg);
+        }
+
+        .k1 .box2 {
+            position: absolute;
+            top: 14.5px;
+            left: 82px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #f19149;
+            transform: rotate(45deg);
+
+        }
+
+        .k1 .box3 {
+            position: absolute;
+            top: 14.5px;
+            left: 162px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #8c97cb;
+            transform: rotate(45deg);
+
+        }
+
+        .k1 .box4 {
+            position: absolute;
+            top: 14.5px;
+            left: 256px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #7ecef4;
+            transform: rotate(45deg);
+
+        }
+
+        .k1 .box5 {
+            position: absolute;
+            top: 14.5px;
+            left: 304px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #cce198;
+            transform: rotate(45deg);
+
+        }
+
+        .k1 .box6 {
+            position: absolute;
+            top: 14.5px;
+            left: 382px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #84ccc9;
+            transform: rotate(45deg);
+
+        }
+
+        .main-c .k2 {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 273px;
+            margin-bottom: 1px;
+        }
+
+        .k2 .img {
+            width: 382px;
+            height: 273px;
+            background: url(img/hs-4.png) no-repeat center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .k2 .text {
+            overflow: hidden;
+            width: 818px;
+            height: 167px;
+            background-color: #fbfbfb;
+            margin-top: 53px;
+            text-align: center;
+            /* line-height: px; */
+        }
+
+        .k2 .text .text-1 {
+            width: 450px;
+            height: 89px;
+            margin: 39px auto;
+            line-height: 35px;
+        }
+
+        .k2 .text .text-1 .p1 {
+            position: relative;
+        }
+
+        .k2 .box1 {
+            position: absolute;
+            top: 14.5px;
+            left: 18px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #f19ec2;
+            transform: rotate(45deg);
+
+        }
+
+        .k2 .box2 {
+            position: absolute;
+            top: 14.5px;
+            left: 100px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #f19149;
+            transform: rotate(45deg);
+
+        }
+
+        .k2 .box3 {
+            position: absolute;
+            top: 14.5px;
+            left: 180px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #8c97cb;
+            transform: rotate(45deg);
+
+        }
+
+        .k2 .box4 {
+            position: absolute;
+            top: 14.5px;
+            left: 242px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #7ecef4;
+            transform: rotate(45deg);
+
+        }
+
+        .k2 .box5 {
+            position: absolute;
+            top: 14.5px;
+            left: 304px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #cce198;
+            transform: rotate(45deg);
+
+        }
+
+        .k2 .box6 {
+            position: absolute;
+            top: 14.5px;
+            left: 382px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #84ccc9;
+            transform: rotate(45deg);
+
+        }
+
+        .main-c .k3 {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 273px;
+            margin-bottom: 1px;
+        }
+
+        .k3 .img {
+            width: 382px;
+            height: 273px;
+            background: url(img/hs-5.png) no-repeat center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .k3 .text {
+            float: right;
+            width: 818px;
+            height: 167px;
+            background-color: #fbfbfb;
+            margin-top: 53px;
+            text-align: center;
+            /* line-height: px; */
+        }
+
+        .k3 .text .text-1 {
+            width: 450px;
+            height: 89px;
+            margin: 39px auto;
+            line-height: 35px;
+        }
+
+        .k3 .text .text-1 .p1 {
+            position: relative;
+        }
+
+        .k3 .box1 {
+            position: absolute;
+            top: 14.5px;
+            left: -6px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #f19ec2;
+            transform: rotate(45deg);
+
+        }
+
+        .k3 .box2 {
+            position: absolute;
+            top: 14.5px;
+            left: 76px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #f19149;
+            transform: rotate(45deg);
+
+        }
+
+        .k3 .box3 {
+            position: absolute;
+            top: 14.5px;
+            left: 156px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #8c97cb;
+            transform: rotate(45deg);
+
+        }
+
+        .k3 .box4 {
+            position: absolute;
+            top: 14.5px;
+            left: 250px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #7ecef4;
+            transform: rotate(45deg);
+
+        }
+
+        .k3 .box5 {
+            position: absolute;
+            top: 14.5px;
+            left: 314px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #cce198;
+            transform: rotate(45deg);
+
+        }
+
+        .k3 .box6 {
+            position: absolute;
+            top: 14.5px;
+            left: 392px;
+            display: block;
+            width: 6px;
+            height: 6px;
+            background-color: #84ccc9;
+            transform: rotate(45deg);
+
+        }
+
+        .main-c .mo {
+            width: 390px;
+            height: 64px;
+            text-align: center;
+            line-height: 64px;
+            border: 1px solid #f2f2f2;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -195px;
+            font-size: 16PX;
+            color: #807e7e;
+        }
+
+        .main-c .mo:hover {
+            border-color: #00daed;
+            color: #00daed;
+        }
+
+        .about-c {
+            position: relative;
+            width: 1200px;
+            height: 296px;
+            margin: 0 auto; 
+            margin-bottom: 100px;
+
+        }
+
+        .about-c .img {
+            width: 500px;
+            height: 296px;
+            background: url(img/hs-6.png) no-repeat center;
+            margin-left: -74.5px;
+        }
+
+        .about-c .text-1 {
+            width: 506px;
+            height: 38px;
+
+        }
+
+        .about-c .text-2 {
+            width: 506px;
+            height: 38px;
+            margin-top: 86px;
+        }
+
+        .about-c .text {
+            width: 506px;
+            height: 160px;
+            position: absolute;
+            left: 600px;
+            top: 73px;
+
+        }
+
+        .about-c .text-1 .js {
+            font-size: 18px;
+            color: #373737;
+            width: 79px;
+            height: 36px;
+            line-height: 20px;
+            border-right: 1px solid #969696;
+            margin-right: 20px;
+        }
+
+        .about-c .text-1 .z-1 {
+            width: 406px;
+            height: 36px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #494949;
+        }
+
+        .about-c .text-1 div {
+            float: left;
+        }
+
+        .about-c .text-2 .ln {
+            font-size: 18px;
+            color: #373737;
+            width: 79px;
+            height: 36px;
+            line-height: 20px;
+            border-right: 1px solid #969696;
+            margin-right: 20px;
+        }
+
+        .about-c .text-2 .z-2 {
+            width: 406px;
+            height: 36px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #494949;
+        }
+
+        .about-c .text-2 div {
+            float: left;
+        }
+
+        .way-c {
+            position: relative;
+            width: 1200px;
+            height: 735px;
+            margin: 0 auto 100px;
+            /* background-color: pink; */
+        }
+
+        .way-c .title {
+            width: 150px;
+            height: 44px;
+            margin-bottom: 60px;
+        }
+
+        .way-c .title .c {
+            position: relative;
+            color: #3b3b3b;
+            font-size: 24px;
+            z-index: 4;
+            line-height: 1;
+        }
+
+        .way-c .title .e {
+            font-size: 14px;
+            color: #c7c7c7;
+            line-height: 20px;
+            /* line-height: 1; */
+        }
+
+        .way-c .title .blue {
+            position: absolute;
+            left: -24px;
+            top: 3px;
+            width: 53px;
+            height: 13px;
+            background-color: #04e4f8;
+        }
+
+        .way-c .img {
+            width: 1200px;
+            height: 500px;
+            background: url(img/hs-7.png) no-repeat center;
+        }
+
+        .way-c .mo {
+            width: 390px;
+            height: 64px;
+            text-align: center;
+            line-height: 64px;
+            border: 1px solid #f2f2f2;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -195px;
+            font-size: 16PX;
+            color: #807e7e;
+        }
+
+        .way-c .mo:hover {
+            border-color: #00daed;
+            color: #00daed;
+        }
+
+        .banner-2 {
+            height: 338px;
+            margin-bottom: 100px;
+            background: url(img/hs-8.png) no-repeat center;
+        }
+
+        .banner-2-c {
+            width: 1200px;
+            height: 338px;
+            margin: 0 auto;
+        }
+
+        .banner-2-c .dh-1 {
+            float: left;
+            overflow: hidden;
+            width: 50%;
+            height: 338px;
+        }
+
+        .banner-2-c .dh-1 .dh {
+            position: relative;
+            width: 200px;
+            height: 120px;
+            margin: 109px auto;
+            text-align: center;
+        }
+
+        .banner-2-c .dh-1 .dh span {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -14.5px;
+            width: 29px;
+            height: 2px;
+            background-color: #9fa2a5;
+        }
+
+        .banner-2-c .dh-2 .dh span {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -14.5px;
+            width: 29px;
+            height: 2px;
+            background-color: #9fa2a5;
+        }
+
+        .banner-2-c .dh-1 .h {
+            width: 142px;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            border: 2px solid #a5a5a9;
+            margin: 0 auto;
+        }
+
+        .banner-2-c .dh-1 .h a {
+            display: block;
+            color: #f1f2f3;
+            font-size: 20px;
+        }
+
+        .banner-2-c .dh-1 .dh .t1 {
+            font-size: 22px;
+            color: #9fa2a4;
+            line-height: 2;
+        }
+
+        .banner-2-c .dh-1 .dh .t2 {
+            font-size: 12px;
+            color: #9fa2a4;
+            line-height: 2;
+
+        }
+
+        .banner-2-c .dh-1 .h:hover {
+            background-color: #04e4f8;
+        }
+
+        .banner-2-c .dh-2 {
+            float: left;
+            overflow: hidden;
+            width: 50%;
+            height: 338px;
+        }
+
+        .banner-2-c .dh-2 .dh {
+            position: relative;
+            width: 200px;
+            height: 120px;
+            margin: 109px auto;
+            text-align: center;
+        }
+
+        .banner-2-c .dh-2 .h {
+            width: 142px;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            border: 2px solid #a5a5a9;
+            margin: 0 auto;
+        }
+
+        .banner-2-c .dh-2 .h a {
+            display: block;
+            color: #f1f2f3;
+            font-size: 20px;
+        }
+
+        .banner-2-c .dh-2 .dh .t1 {
+            font-size: 22px;
+            color: #9fa2a4;
+            line-height: 2;
+        }
+
+        .banner-2-c .dh-2 .dh .t2 {
+            font-size: 12px;
+            color: #9fa2a4;
+            line-height: 2;
+
+        }
+
+        .banner-2-c .dh-2 .h:hover {
+            background-color: #04e4f8;
+        }
+
+        .way-c .title {
+            width: 150px;
+            height: 44px;
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            background-color: #f2f2f2;
+
+        }
+
+        .footer-c {
+            position: relative;
+            width: 1200px;
+            height: 380px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+            /* background-color: pink; */
+            /* background-color: #f2f2f2; */
+        }
+
+        .footer-c .l {
+            float: left;
+            width: 600px;
+            height: 380px;
+        }
+
+        .footer-c .l h2 {
+            line-height: 120px;
+        }
+
+        .footer-c .l p {
+            line-height: 37px;
+        }
+
+        .footer-c .l a {
+            margin-right: 20px;
+        }
+
+        .footer-c .title .c {
+            position: relative;
+            color: #3b3b3b;
+            font-size: 24px;
+            z-index: 4;
+            line-height: 1;
+        }
+
+        .footer-c .title .e {
+            font-size: 14px;
+            color: #c7c7c7;
+            /* line-height: 32px; */
+            line-height: 20px;
+        }
+
+        .footer-c .title .blue {
+            position: absolute;
+            left: -24px;
+            top: 3px;
+            width: 53px;
+            height: 13px;
+            background-color: #04e4f8;
+        }
+
+        .footer-c .r {
+            position: relative;
+            float: left;
+            width: 600px;
+            height: 380px;
+        }
+
+        .footer-c .r .h {
+            /* float: left; */
+            position: absolute;
+            left: 100px;
+            top: 137px;
+            width: 500px;
+            height: 166px;
+        }
+
+        .footer-c .r .h .name {
+            color: #bfbdbd;
+            float: left;
+            position: relative;
+            font-size: 14px;
+            width: 135px;
+            height: 67px;
+            border-bottom: 1px solid #bfbdbd;
+            margin-right: 45px;
+            margin-bottom: 30px;
+        }
+
+        .footer-c .r .h .name .in {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: none;
+            outline: none;
+            background-color: #f2f2f2;
+
+        }
+
+        .footer-c .r .h .yx {
+            float: left;
+            position: relative;
+            font-size: 14px;
+
+            width: 135px;
+            height: 67px;
+            color: #bfbdbd;
+            border-bottom: 1px solid #bfbdbd;
+
+            margin-right: 45px;
+
+        }
+
+        .footer-c .r .h .yx .in {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: none;
+            outline: none;
+            background-color: #f2f2f2;
+
+        }
+
+        .footer-c .r .h .tel {
+            float: left;
+            position: relative;
+            font-size: 14px;
+
+            width: 135px;
+            height: 67px;
+            /* border-bottom: 1px solid #969696; */
+            color: #bfbdbd;
+            border-bottom: 1px solid #bfbdbd;
+
+            /* margin-right: 43px; */
+
+        }
+
+        .footer-c .r .h .tel .in {
+            background-color: #f2f2f2;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: none;
+            outline: none;
+        }
+
+        .footer-c .r .h .main {
+            float: left;
+            position: relative;
+            font-size: 14px;
+
+            width: 500px;
+            height: 67px;
+            /* border-bottom: 1px solid #969696; */
+            color: #bfbdbd;
+            border-bottom: 1px solid #bfbdbd;
+
+        }
+
+        .footer-c .r .h .main .in {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border: none;
+            outline: none;
+            background-color: #f2f2f2;
+
+        }
+
+        .footer-c .r .h .bu {
+            position: absolute;
+            left: 0;
+            bottom: -67px;
+            color: #e0e0e0;
+            font-size: 14px;
+            width: 61px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            background-color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top-c">
+            <a href=""><div class="logo"></div></a>
+            <div class="text">
+                <span><a href="">首页</a></span>
+                <span><a href="pages/特别策划/特别策划.html">特别策划</a></span>
+                <span class="jp"><a href="pages/精品路线/定制团体游/定制团体游.html">精品路线</a>
+                    <div class="ej"><a href="pages/精品路线/定制团体游/定制团体游.html">定制团体游</a><a href="pages/精品路线/领队自由行/领队自由行.html">领队自由行</a></div>
+                </span>
+                <span class="gy"><a href="pages/关于我们/关于我们.html">关于我们</a>
+                    <div class="ej">
+                        <p><a href="">企业理念</a></p>
+                        <p><a href="">品牌介绍</a></p>
+                    </div>
+                </span>
+                <span class="mr0"><a href="pages/联系我们/联系我们.html">联系我们</a>
+                    <div class="ej">
+                        <p><a href="">在线咨询</a></p>
+                        <p><a href="">留言板块 </a></p>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="banner-1">
+        <div class="yuan">
+            <div class="yu"> <a href=""></a></div>
+            <div class="yu"> <a href=""></a></div>
+            <div class="yu"> <a href=""></a></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-c">
+            <div class="title">
+                <p class="c">特别策划</p>
+                <p class="e">ACTIVITY ROUTR</p>
+                <div class="blue"></div>
+            </div>
+            <div class="k1">
+                <div class="img"></div>
+                <div class="text">
+                    <div class="text-1">
+                        <h2>苍山洱海旁，过一段慢时光</h2>
+                        <p>云南风花雪月之旅 （6days）</p>
+                        <p class="p1">
+                            <span class="box1"></span>洱海骑行&#160;&#160;&#160;
+                            <span class="box2"></span>手作扎染&#160;&#160;
+                            <span class="box3"></span>泸沽湖划船&#160;&#160;
+                            <span class="box4"></span>草海&#160;&#160;
+                            <span class="box5"></span>束河古镇&#160;&#160;
+                            <span class="box6"></span>拉市海
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="k2">
+                <div class="img"></div>
+                <div class="text">
+                    <div class="text-1">
+                        <h2>苍近距离看“滚滚”花式卖萌</h2>
+                        <p>成都City Walk之旅 （6days）</p>
+                        <p class="p1">
+                            <span class="box1"></span>熊猫基地&#160;&#160;&#160;
+                            <span class="box2"></span>宽窄巷子&#160;&#160;
+                            <span class="box3"></span>武侯祠&#160;&#160;
+                            <span class="box4"></span>小酒馆&#160;&#160;
+                            <span class="box5"></span>吃货天地&#160;&#160;
+                            <span class="box6"></span>锦里
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="k3">
+                <div class="img"></div>
+                <div class="text">
+                    <div class="text-1">
+                        <h2>骑行青海湖，行摄纯净天空之境</h2>
+                        <p>梦回大西北之旅 （6days）</p>
+                        <p class="p1">
+                            <span class="box1"></span>茶卡盐湖&#160;&#160;&#160;
+                            <span class="box2"></span>U 型天路&#160;&#160;
+                            <span class="box3"></span>青海湖日出&#160;&#160;
+                            <span class="box4"></span>魔鬼城&#160;&#160;
+                            <span class="box5"></span>七彩丹霞&#160;&#160;
+                            <span class="box6"></span>莫高窟
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <div class="mo">
+                    MORE
+                </div>
+            </a>
+        </div>
+        <div class="about">
+            <div class="about-c">
+                <div class="img"></div>
+                <div class="text">
+                    <div class="text-1">
+                        <div class="js">
+                            <p>介绍</p>
+                            <p style="font-size: 12px" style="color: #494949">Introduce</p>
+                        </div>
+                        <div class="z-1">新旅行概念社区，在这里，你可以收货来自世界各地的友谊，为您
+                            提供省心、省钱、纯玩、有趣的路线随时带您出发看世界。</div>
+                    </div>
+                    <div class="text-2">
+                        <div class="ln">
+                            <p>理念</p>
+                            <p style="font-size: 12px" style="color: #494949">Concept</p>
+                        </div>
+                        <div class="z-2">>每一寸土地都承载着一个城市厚重而亲切的灵魂。
+                            About travel, about life, That's all.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="way">
+            <div class="way-c">
+                <div class="title">
+                    <p class="c">精品路线</p>
+                    <p class="e">CLASSICS ROUTR</p>
+                    <div class="blue"></div>
+                </div>
+                <div class="img"></div>
+                <a href="">
+                    <div class="mo">
+                        MORE
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="banner-2">
+            <div class="banner-2-c">
+                <div class="dh-1">
+                    <div class="dh">
+                        <div class="h"><a href="pages/精品路线/定制团体游/定制团体游.html">定制团体游</a></div>
+                        <p class="t1">独立成团 &#160; 专属定制</p>
+                        <p class="t2">简单几步，定制您的私人旅行</p>
+                        <span></span>
+                    </div>
+
+                </div>
+                <div class="dh-2">
+                    <div class="dh">
+                        <div class="h"><a href="pages/精品路线/领队自由行/领队自由行.html">领队自由行</a></div>
+                        <p class="t1">金牌领队 &#160; 专业跟拍</p>
+                        <p class="t2">解锁陌生，升级地道旅游体验</p>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="footer-c">
+                <div class="l">
+                    <div class="title">
+                        <p class="c">联系我们</p>
+                        <p class="e">CONTACT</p>
+                        <div class="blue"></div>
+                    </div>
+                    <h2>慢旅Slow Travle工作室 </h2>
+                    <p>地点：中国河南省郑州市绿地新都汇</p>
+                    <p>邮编：1000000</p>
+                    <p>电话：0392-23656504</p>
+                    <p>邮箱：manlv@qq.com</p>
+                    <p><a href=""><img src="img/hs-9.png " alt=""></a><a href=""><img src="img/hs-10.png" alt="">
+                        </a><a href=""><img src="img/hs-11.png" alt=""></a></p>
+                    <p>COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</p>
+                </div>
+                <div class="r">
+                    <div class="h">
+                        <div class="name">
+                            <p>姓名</p> <input class="in" type=" ">
+                        </div>
+                        <div class="yx">
+                            <p>邮箱</p> <input class="in" type="text">
+                        </div>
+                        <div class="tel">
+                            <p>电话</p> <input class="in" type="text">
+                        </div>
+                        <div class="main">
+                            <p>内容</p> <input class="in" type="text">
+                        </div>
+                        <a href="">
+                            <div class="bu">
+                                提交
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+</body>
+
+</html>

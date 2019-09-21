@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>昌隆首页</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .top {
+        height: 37px;
+        background-color: #2e3139;
+    }
+
+    .header {
+        height: 98px;
+        background-color: #f2f2f2;
+    }
+
+    .banner {
+        height: 400px;
+        background-color: #1b5e92;
+      
+
+    }
+
+    .main {
+        padding-top: 39px;
+        height: 830px;
+        background-color: #f2f2f2;
+      
+    }
+
+    .footer {
+        height: 204px;
+        background-color: #2e3139;
+    }
+
+    .top-c,
+    .header-c,
+    .banner-c,
+    .main-c,
+    .footer-c {
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .top-c {
+        line-height: 37px;
+        font-size: 14px;
+        color: #969696;
+    }
+
+    .top-c .title {
+        line-height: 1;
+        float: right;
+    }
+
+    .top-c .title a {
+        float: left;
+        color: #969696;
+        font-size: 14px;
+        margin-top: 11.5px;
+    }
+
+    .top-c .title a:hover {
+        color: #1b5e92;
+        text-decoration: underline;
+
+    }
+
+    .top-c .title .sc {
+        border-right: 1px solid #969696;
+        padding-right: 14px;
+    }
+
+    .top-c .title .zy {
+        margin-left: 18px;
+    }
+
+    .header-c {
+        background: url(img/logo.png) no-repeat left center;
+  
+    }
+
+    .header-c .title {
+        position: relative;
+        float: right;
+        line-height: 98px;
+    }
+
+    .header-c .sy {
+        position: relative;
+        float: left;
+
+        width: 90px;
+        line-height: 98px;
+        margin: 0 auto;
+        text-align: center;
+        margin-right: 24px;
+    }
+
+    .header-c .sy.mr6 {
+        width: 64px;
+        margin-right: 0;
+        margin-left: 13px;
+    }
+
+    .header a {
+        display: block;
+
+        color: #5a5a5a;
+        font-size: 16px;
+    }
+
+    .header-c .sy span {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 33px;
+        left: 0px;
+        background-color: #1b5e92;
+        display: none;
+    }
+
+    .header-c .sy.active a {
+        color: #1b5e92;
+    }
+
+    .header-c .sy.active span {
+        display: block;
+    }
+
+    .header-c .sy:hover a {
+        color: #1b5e92;
+    }
+
+    .header-c .sy:hover span {
+        display: block;
+    }
+
+    .banner-c {
+        position: relative;
+        background: url(img/tp-8.png) no-repeat center;
+
+
+    }
+    .banner-c .dot{
+        position: absolute;
+        bottom:12px;
+        left: 0;
+        width: 54px;
+        height: 4px;
+
+    }
+    .banner-c .dot1{
+        float: left;
+        width: 24px;
+        height: 4px;
+        margin-right: 6px;
+        background-color: #d1d1d1;
+    }
+    .banner-c .dot2{
+        float: left;
+        width: 24px;
+        height: 4px;
+        background-color: #d1d1d1;
+    }    
+    .banner-c .dot2:hover{
+        background-color: #4280ba;
+    }
+    .banner-c .dot1.active{
+        background-color: #4280ba
+    }
+
+
+    .main-c {
+        margin-bottom: 20px;
+    }
+
+    .main-c .title-1 {
+        position: relative;
+        width: 100%;
+        height: 29px;
+        line-height: 29px;
+        border-bottom: 1px solid #969696;
+        margin-bottom: 17px;
+
+    }
+
+    .title-1 a {
+        color: #6d6d6d;
+    }
+
+    .title-2 a {
+        color: #6d6d6d;
+    }
+
+    .title-4 .title a {
+        color: #6d6d6d;
+    }
+
+    .title-1 .mo:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-2 .mo:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .mo:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .main-c .title-2 {
+        position: relative;
+        width: 100%;
+        height: 31px;
+        line-height: 31px;
+        border-bottom: 1px solid #969696;
+        margin-bottom: 19px;
+
+    }
+
+    .main-c .title-3 {
+        width: 300px;
+        height: 178px;
+        float: left;
+        margin-right: 25px;
+    
+    }
+
+    .title-3 .title {
+        position: relative;
+        width: 300px;
+        height: 29px;
+        line-height: 31px;
+        border-bottom: 1px solid #969696;
+        margin-bottom: 22px;
+    }
+
+    .title-3 .title .box-t {
+        position: absolute;
+        top: 6.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92
+    }
+
+    .title-3 .title .box-b {
+        position: absolute;
+        top: 16.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92
+    }
+
+    .title-3 .title span {
+        float: left;
+        margin-left: 22px;
+        font-size: 18px;
+        color: #5a5a5a;
+    }
+
+    .main-c .title-4 {
+        width: 675px;
+        height: 178px;
+        float: right;
+ 
+    }
+
+    .title-4 .title {
+        position: relative;
+        width: 675px;
+        height: 29px;
+        line-height: 29px;
+        border-bottom: 1px solid #969696;
+        margin-bottom: 22px;
+
+    }
+
+    .title-4 .title .box-t {
+        position: absolute;
+        top: 6.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92
+    }
+
+    .title-4 .title .box-b {
+        position: absolute;
+        top: 16.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92
+    }
+
+    .title-4 .title span {
+        float: left;
+        margin-left: 22px;
+        font-size: 18px;
+        color: #5a5a5a;
+    }
+
+    .title-4 .title .mo {
+        float: right;
+        width: 52px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #969696;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+
+
+
+    .main-c .title-2 .box-t {
+        position: absolute;
+        top: 6.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92
+    }
+
+    .main-c .title-2 .box-b {
+        position: absolute;
+        top: 16.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92;
+
+    }
+
+    .main-c .title-1 .box-t {
+        position: absolute;
+        top: 6.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92
+    }
+
+    .main-c .title-1 .box-b {
+        position: absolute;
+        top: 16.5px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        background-color: #1b5e92;
+  
+    }
+
+    .main-c .title-1 span {
+        float: left;
+        margin-left: 22px;
+        font-size: 18px;
+    }
+
+    .main-c .title-1 .mo {
+        float: right;
+        width: 52px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #969696;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+
+    .main-c .title-2 span {
+        float: left;
+        margin-left: 22px;
+        font-size: 18px;
+    }
+
+    .main-c .title-2 .mo {
+        float: right;
+        width: 52px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #969696;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+
+    .title-3 .lx ul {
+        color: #3a3a3a;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .title-4 .dt a {
+    
+        color: #3a3a3a;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .title-4 .dt2:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt3:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt4:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt5:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt1:hover a {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt1:hover .rq {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt2:hover .rq {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt3:hover .rq {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt4:hover .rq {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .title-4 .dt5:hover .rq {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .dt a {
+    
+        margin-left: 11px;
+    }
+
+    .title-4 .dt1 {
+        position: relative;
+    }
+
+    .title-4 .dt2 {
+        position: relative;
+    }
+
+    .title-4 .dt3 {
+        position: relative;
+    }
+
+    .title-4 .dt4 {
+        position: relative;
+    }
+
+    .title-4 .dt5 {
+        position: relative;
+    }
+
+    .title-4 .rq {
+        color: #808080;
+        font-size: 15px;
+    }
+
+    .title-4 .dt1 .rq {
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+
+    .title-4 .dt2 .rq {
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+
+    .title-4 .dt3 .rq {
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+
+    .title-4 .dt4 .rq {
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+
+    .title-4 .dt5 .rq {
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+
+    .title-4 .dt1 span {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        background-color: #b2b2b2;
+    }
+
+    .title-4 .dt1 span {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        background-color: #b2b2b2;
+    }
+
+    .title-4 .dt2 span {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        background-color: #b2b2b2;
+    }
+
+    .title-4 .dt3 span {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        background-color: #b2b2b2;
+    }
+
+    .title-4 .dt4 span {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        background-color: #b2b2b2;
+    }
+
+    .title-4 .dt5 span {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        background-color: #b2b2b2;
+    }
+
+    .title-4 .dt1 p:hover.title-4 .dt1 p {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .main-c .img-c .img {
+      
+        width: 243px;
+        height: 151px;
+        line-height: 151px;
+        text-align: center;
+   
+    }
+
+    .main-c .img-c {
+        height: 176px;
+        margin-bottom: 57px;
+    }
+
+    .img-1 .img {
+        width: 244px;
+        height: 151px;
+        line-height: 151px;
+        text-align: center;
+        background: url(img/tp-1.png) no-repeat center;
+
+    }
+
+    .img-2 .img {
+        width: 243px;
+        height: 151px;
+        line-height: 151px;
+      
+        background: url(img/tp-2.png) no-repeat center;
+    }
+
+    .img-3 .img {
+        width: 244px;
+        height: 151px;
+        line-height: 151px;
+        text-align: center;
+        background: url(img/tp-3.png) no-repeat center;
+    }
+
+    .img-4 .img {
+        width: 243px;
+        height: 151px;
+        line-height: 151px;
+        text-align: center;
+        background: url(img/tp-4.png) no-repeat center;
+    }
+
+    .main-c .img-c .text {
+        width: 243px;
+        height: 25px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 15px;
+        color: #3a3a3a;
+    }
+
+    .img-c .img-1,
+    .img-2,
+    .img-3,
+    .img-4 {
+        float: left;
+        margin-right: 9.3px;
+    }
+
+    .img-c .img-4 {
+        margin-right: 0;
+    }
+
+    .main-c .profile {
+        float: left;
+        width: 300px;
+        height: 170px;
+        background: url(img/tp-5.png) no-repeat center;
+        margin-right: 25px;
+        margin-bottom: 56px;
+    }
+
+    .text {
+        float: right;
+        width: 675px;
+        line-height: 24px;
+  
+        margin-bottom: 58px;
+    }
+
+    .text h2 {
+        color: #3a3a3a;
+        font-size: 16px;
+    }
+
+    .text p {
+        color: #6d6d6d;
+        font-size: 14px;
+        line-height: 24px;
+        
+        text-indent: 2em;
+      
+    }
+
+    .footer-c {
+        text-align: center;
+        line-height: 40px;
+        padding-top: 20px;
+    }
+
+    .footer-c a {
+        color: #bbbfcb;
+        font-size: 14px;
+        margin: 0 0 0 10px;
+        border-right: 1px solid #bbbfcb;
+        padding-right: 10px;
+    }
+    .footer-c .wz a{
+        color: #bbbfcb;
+        font-size: 14px;
+        margin: 0 0 0 10px;
+        border: none;
+    }
+    .footer-c .wz a:hover{
+        color: #1b5e92;
+        text-decoration: underline;}
+
+    .footer-c .site .z {
+        border: none;
+    }
+
+    .footer-c p {
+        color: #bbbfcb;
+    }
+
+    .footer-c .site a:hover {
+        color: #1b5e92;
+        text-decoration: underline;
+    }
+
+    .dh {
+        position: fixed;
+        right: 20px;;
+        bottom: 50px;
+        width: 141px;
+        height: 181px;
+        background: url(img/tp-6.png) no-repeat center;
+    }
+    .dh:hover{
+        border: 2px solid #1b5e92;
+    }
+</style>
+
+<body>
+    <div class="top">
+        <div class="top-c">
+            <span>欢迎莅临河南省巩义市昌隆精化有限公司！</span>
+            <div class="title">
+                <a href="#" class="sc">收藏本站</a>
+                <a href="#" class="zy">设为首页</a>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-c">
+            <div class="title">
+                <div class="sy mr1 active"><a href="#">首页</a><span></span> </div>
+                <div class="sy"><a href="#">公司简介</a><span></span> </div>
+                <div class="sy"><a href="#">产品中心</a><span></span></div>
+                <div class="sy"><a href="#">新闻动态</a><span></span></div>
+                <div class="sy"><a href="#">诚聘英才</a><span></span></div>
+                <div class="sy mr6"><a href="#">联系我们</a><span></span></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-c">
+            <div class="dot">
+                <a href=""><div class="dot1 active"></div></a>
+                <a href=""><div class="dot2"></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-c">
+            <div class="title-1">
+                <div class="box-t"></div>
+                <div class="box-b"></div>
+                <span>产品中心</span>
+                <span>PRODUCTS</span>
+                <div class="mo"><a href="#">more></a></div>
+            </div>
+            <div class="img-c">
+                <div class="img-1">
+                    <div class="img"></div>
+                    <div class="text">速溶硅酸钠/粉状硅酸钠</div>
+                </div>
+                <div class="img-2">
+                    <div class="img"></div>
+                    <div class="text">水玻璃</div>
+                </div>
+                <div class="img-3">
+                    <div class="img"></div>
+                    <div class="text">固体硅酸钠</div>
+                </div>
+                <div class="img-4">
+                    <div class="img im"></div>
+                    <div class="text">硅溶胶</div>
+                </div>
+
+            </div>
+            <div class="title-2">
+                <div class="box-t"></div>
+                <div class="box-b"></div>
+                <span>公司简介</span>
+                <span>Company Profile</span>
+                <div class="mo"><a href="#">more></a></div>
+            </div>
+            <div class=" profile"></div>
+            <div class="text">
+                <h2>河南省巩义市昌隆精化有限公司</h2>
+                <p class="t1">巩义市昌隆精化有限公司位于人杰地灵的杜甫故里巩义市，成立于1999年，经过近17年的不懈努力,我们
+                    已成为国内最专业的硅酸钠类产品生产厂家，郑州地区居同行业之首。</p>
+                <p class="t2">公司主要生产固体、液体、粉状、钾钠等多种规格的泡花碱，其中年生产固体2万吨以上，液体5万吨速溶
+                    硅酸钠千余吨，并可根据用户需要生产特殊规格的泡花碱。我们以稳定的产品质量、优质的服务赢得了广大客
+                    户的信赖和支持，产品畅销全国以及世界各个国家和地区。公司在立足国内市场的同时，积极开拓国际市场。
+                    目前产品已销往东南亚、欧洲等国家和地区。公司愿与有志之士协同合作，互利共赢!</p>
+            </div>
+            <div class="title-3">
+                <div class="title">
+                    <div class="box-t"></div>
+                    <div class="box-b"></div>
+                    <span>联系我们</span>
+                    <span>Contact Us</span>
+                </div>
+                <div class="lx">
+                    <ul>
+                        <li>电 话: &#160;&#160;&#160;0371-4124378</li>
+                        <li>手 机: &#160;&#160;&#160;13598855556（李经理）</li>
+                        <li>传 真: &#160;&#160;&#160;010-80210483</li>
+                        <li>邮 箱: &#160;&#160;&#160;clhg@163.com</li>
+                        <li>地 址: &#160;&#160;&#160;河南省巩义市北山口汽车站南200米</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="title-4">
+                <div class="title">
+                    <div class="box-t"></div>
+                    <div class="box-b"></div>
+                    <span>新闻动态</span>
+                    <span>Company News</span>
+                    <div class="mo"><a href="#">more></a></div>
+                </div>
+                <div class="dt">
+                    <div class="dt1">
+                        <span></span>
+                        <a href="">生产固体泡花碱销售前景如何</a>
+                        <div class="rq">2016-07-05</div>
+                    </div>
+                    <div class="dt2">
+                        <span></span>
+                        <a href="">水玻璃的化学成分密度模数对水玻璃的性能有什么影响</a>
+                        <div class="rq">2016-11-19</div>
+                    </div>
+                    <div class="dt3">
+                        <span></span>
+                        <a href="">昌隆泡花碱告知你硅酸钠水溶液的技术指标 </a>
+                        <div class="rq">2016-07-05</div>
+                    </div>
+                    <div class="dt4">
+                        <span></span>
+                        <a href="">生产固体泡花碱销售前景如何</a>
+                        <div class="rq">2016-07-05</div>
+                    </div>
+                    <div class="dt5">
+                        <span></span>
+                        <a href="">生产固体泡花碱销售前景如何</a>
+                        <div class="rq">2016-07-05</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-c">
+            <div class="site">
+                <p><a href="">公司介绍</a><a href="">产品中心</a><a href="">网站新闻</a><a href="">留言系统</a><a href="">联系我们</a><a
+                        class="z" href="">网站地图</a></p>
+                <p>河南省巩义市昌隆精化有限公司 公司地址：巩义市北山口汽车站南200米 手机：13598855556</p>
+                <p class="wz">电话：0371-64124378 邮编：450000  邮箱：gychanglong@163.com <a href="">网址：http://www.clphj.com</a></p>
+                <p>豫ICP备12013179号-1</p>
+            </div>
+        </div>
+    </div>    
+    <a class="dh" href="#"></a> 
+
+
+</body>
+
+</html>

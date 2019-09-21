@@ -1,0 +1,29 @@
+.main-c .title {
+    width: 114px;
+    height: 44px;
+    margin-bottom: 42px;
+}
+
+.main-c .title .c {
+    position: relative;
+    color: #3b3b3b;
+    font-size: 24px;
+    z-index: 4;
+    line-height: 1;
+}
+
+.main-c .title .e {
+    font-size: 14px;
+    color: #c7c7c7;
+    line-height: 20px;
+    /* line-height: 1; */
+}
+
+.main-c .title .blue {
+    position: absolute;
+    left: -24px;
+    top: 3px;
+    width: 53px;
+    height: 13px;
+    background-color: #04e4f8;
+}
