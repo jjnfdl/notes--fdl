@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = ["c", "a", "z", "a", "a",'x','y','y','y','y'];
+        for (var i = 0; i < arr.length; i++) {
+            var x = arr[i];
+            var k = 0;
+            for (var j = 0; j < arr.length; j++) {
+                if (x == arr[j]) {
+                    k++;
+                }
+            }
+            var s = x + ':' + k;
+            // console.log(k);
+            console.log(s);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

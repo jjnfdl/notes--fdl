@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1500, 1200, 2000, 2100, 2100, 1800,4000,5000];
+        for (var i = 0; i < arr.length; i++) {
+            var k = 0;
+            if (arr[i] > 2000) {
+                // var dy = i;
+                k++
+                // console.log(dy);
+            }
+            if (arr[i] > 2000) {
+                var dy = i;
+                for (var j = 0; j < k + 1; j++) {
+                    arr.splice(dy, 1);
+
+                }
+            }
+
+        }
+        console.log(arr);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = 'AbCdeTIj';
+        var s = '';
+        for (var i = 0; i < str.length; i++) {
+            var str1 = str.charAt(i);
+            var str2 = str.charAt(i);
+            //   console.log(str1);
+            //   console.log(typeof str1);
+            if (str.charAt(i) != str1.toLowerCase()) {
+                var str1 = str1.toLowerCase();
+                console.log(str1);
+                s = s+ str1;
+
+            }else if (str.charAt(i) != str2.toUpperCase()) {
+                var str2 = str2.toUpperCase();
+                console.log(str2);
+                s = s+str2
+            }
+          
+        }
+        console.log(s);
+
+
+    </script>
+</body>
+
+</html>

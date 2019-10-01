@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 6, 5, 100, 89];
+        var arr1 =[1,4,7,9,5,76,45];
+        function say(arr) {
+            for (var j = 0; j < arr.length - 1; j++) {
+                var minIndex = j;
+                for (var i = j + 1; i < arr.length; i++) {
+                    if (arr[minIndex] > arr[i]) {
+                        minIndex = i;
+                    }
+                }
+                if (minIndex !== j) {
+                    var temp = arr[j];
+                    arr[j] = arr[minIndex];
+                    arr[minIndex] = temp;
+                }
+               
+            }
+            return arr;
+        }
+        
+        console.log(say(arr));
+        console.log(say(arr1));
+    </script>
+</body>
+
+</html>

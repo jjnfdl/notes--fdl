@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var date = new Date('2018/09/03')
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.getDate();
+        var sum1 = 0;
+        var monthDay = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30];
+        for (var i = 0; i < month; i++) {
+            sum1 = sum1 + monthDay[i];
+        }
+        console.log(sum1);
+        if ((year % 4 == 0 && year%100 != 0) || year % 400 == 0) {
+            var sum= 0;
+            sum=sum1+day+1;
+
+        }else{
+            sum = sum1+day;
+        }
+        console.log(sum);
+
+    </script>
+</body>
+
+</html>

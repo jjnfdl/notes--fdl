@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function say(x) {
+            if (x === 1) {
+                return 1;
+            }
+            if (x === 2) {
+                return 3;
+            }
+            return say(x - 1) + x * (say(x - 1) - say(x - 2));
+        }
+        console.log(say(6));
+
+
+
+    </script>
+</body>
+
+</html>

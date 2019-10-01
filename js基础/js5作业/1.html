@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="douban.js"></script>
+    <script>
+        console.log(movies);
+        var subject = movies.subjects;
+        for (var i = 0; i < subject.length; i++) {
+            var title = subject[i].title;
+            // console.log(title);
+            var director = subject[i].directors;
+            for (var j = 0; j < director.length; j++) {
+                var name = director[j].name;
+                var str = '电影名字:' + title + ',' + '导演:' + name;
+                console.log(str);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

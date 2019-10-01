@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr1 = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2', 'D1', 'D2'];
+        var arr2 = ['A', 'B', 'C', 'D'];
+        // arr2.indexOf('A');
+        // arr1.splice(2, 0, arr2[arr2.indexOf('A')]);
+        // arr2.indexOf('B');
+        // arr1.splice(5, 0, arr2[arr2.indexOf('B')]);
+        // arr2.indexOf('C');
+        // arr1.splice(8, 0, arr2[arr2.indexOf('C')]);
+        // arr2.indexOf('D');
+        // arr1.splice(11, 0, arr2[arr2.indexOf('D')]);
+        // console.log(arr1);
+        var k = 2;
+        for (var i = 0; i < arr2.length; i++) {
+            var j = i;
+            arr1.splice(k, 0, arr2[i]);
+            k += 3;
+
+        }
+        console.log(arr1);
+    </script>
+</body>
+
+</html>

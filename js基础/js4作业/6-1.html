@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function say(x) {
+            if (x === 1) {
+                return 1;
+            }
+            return x * say(x - 1);
+        }
+        function ma(x){
+            if (x === 1) {
+                return 1;
+            }
+            return say(x)+ma(x-1);
+        }
+        console.log(ma(6));
+
+
+    </script>
+</body>
+
+</html>

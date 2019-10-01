@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 遍历数组元素
+        var arr = ['小明', '小红', '小王', '小张'];
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+
+        // 求数组平均值
+        var arr = [32, 41, 1, 40, 12, 5];
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        var pj = sum / arr.length;
+        console.log(pj);
+
+
+        // 数组高级 中sort()用法
+        var users = [
+            {
+                name: "小明",
+                height: 172,
+                age: 24,
+            },
+            {
+                name: "小张",
+                height: 176,
+                age: 21,
+            },
+            {
+                name: "小红",
+                height: 160,
+                age: 22,
+            },
+            {
+                name: "小王",
+                height: 173,
+                age: 21,
+            },
+            {
+                name: "小赵",
+                height: 173,
+                age: 22,
+            },
+        ];
+        // 实现按年龄排序,年龄相同  an 身高升序
+        users.sort(function (a, b) {
+            if (a.age === b.age) {
+                return a.height - b.height;
+            } else {
+                return a.age - b.age;
+            }
+        });
+        console.log(users);
+
+
+
+
+        // 冒泡排序
+        var arr = [41, 32, 1, 40, 12, 5, 59, 90, 4];
+        for (var j = 0; j < arr.length - 1; j++) {
+            for (var i = 0; i < arr.length - 1 - j; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    var temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+
+
+
+        // 选择排序
+        var arr = [41, 32, 1, 40, 12, 5, 59, 90, 4];
+        for (var i = 0; i < arr.length; i++) {
+            var min = i;
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[min] > arr[j]) {
+                    min = j;
+                }
+            }
+            if (min !== i) {
+                var temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
+            }
+        }
+        console.log(arr);
+
+
+        // 插入排序
+        
+
+    </script>
+</body>
+
+</html>
